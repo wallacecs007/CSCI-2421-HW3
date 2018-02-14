@@ -14,3 +14,12 @@ Vehicle::Vehicle(int _year, std::string _make, std::string _model)
     make = _make;
     model = _model;
 }
+
+std::ostream & operator<< (std::ostream & out, Vehicle& kickout)
+{
+    out << std::endl << kickout.getYear() << std::endl;
+	out << kickout.getMake() << std::endl;
+    out << kickout.getModel() << std::endl << std::endl;
+
+	return out;
+}

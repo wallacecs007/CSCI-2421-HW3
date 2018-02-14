@@ -1,3 +1,6 @@
+#ifndef VEHICLE_H
+#define VEHICLE_H
+
 #include <string>
 
 class Vehicle
@@ -10,7 +13,7 @@ private:
 
 public:
     Vehicle(); //Default constructor for class Vehicle
-    ~Vehicle(); //Creating a destructor for class Vehicle
+    //~Vehicle(); //Creating a destructor for class Vehicle
     Vehicle(int _year, std::string _make, std::string _model);
 
     void setYear(int _year) { year = _year; }
@@ -20,6 +23,10 @@ public:
     void setModel(std::string _model) { model = _model; }
     std::string getModel() { return model; }
 
-
+    friend std::ostream & operator<< (std::ostream & out, Vehicle& kickout);
 
 };
+
+
+
+#endif
