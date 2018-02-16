@@ -1,6 +1,8 @@
 #include <iostream> 
 #include "Vehicle.h"
 
+//Creating the vehicle class's default and customized constructors
+
 Vehicle::Vehicle()
 {
     year = 0;

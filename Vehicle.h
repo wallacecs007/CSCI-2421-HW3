@@ -3,6 +3,8 @@
 
 #include <string>
 
+//Creating a vehicle class with some basic information for a vehicle object
+
 class Vehicle
 {
 
